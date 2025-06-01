@@ -1,14 +1,16 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
-:root {
+:root{
     font-size: 62.5%;
 
-    --background-primary: #F4F5FB;
+	--background-primary: #F4F5FB;
     --background-secondary: #FFF;
     --color-brand: #CA3884;
     --color-brand-hover: #A52C6B;
@@ -35,34 +37,33 @@ header {
     flex-direction: column;
     align-items: start;
 
-img {
-    width: 15.4rem;
-    margin-inline: auto;
-    margin-bottom: 3rem;
-}
+    img{
+        width: 15.4rem;
+        margin-inline: auto;
+        margin-bottom: 3rem;
+    }
 
-button {
-    border: none;
-    background: none;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 1.6rem;
-    color: var(--color-brand);
-    cursor: pointer;
-}
+    button {
+        border: 0;
+        background: none;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 1.6rem;
+        color: var(--color-brand);
+        cursor: pointer;
+    }
 
-h1 {
-    font-size: 2.4rem;
-    color: var(--content-primary);
-    line-height: 3.2rem;
-}
-
+    h1 {
+        font-size: 2.4rem;
+        color: var(--content-primary);
+        line-height: 3.2rem;
+    }
 }
 
 main {
     max-width: 62.7rem;
-    margin-inline: auto;
+    margin: auto;
 }
 
 .add-item {
@@ -77,16 +78,16 @@ main {
         outline: none;
         color: var(--content-primary);
 
-        &::placeholder {
-            color: var(--content-tertiary);
+        &::placeholder{
+            color: var(--content-tertiary)
         }
 
-        &:hover {
-           border: 2px solid var(--border-hover); 
+        &:hover{
+            border: 2px solid var(--border-hover);
         }
 
-        &:focus {
-            border: 2px solid var(--color-brand);
+        &:focus{
+            border: 2px solid var(--color-brand); 
         }
     }
 
@@ -95,21 +96,21 @@ main {
         border: none;
         color: var(--always-white);
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 1rem 2.4rem;
         font-size: 1.6rem;
         line-height: 2rem;
         border-radius: 1.2rem;
         font-weight: 600;
         cursor: pointer;
-
-        &:hover {
+    
+        &:hover{
             background: var(--color-brand-hover);
         }
     }
 }
 
 .list {
-    .item {
+    .item{
         background: var(--background-secondary);
         padding: 1.2rem;
         margin-bottom: 1.2rem;
@@ -120,12 +121,13 @@ main {
         line-height: 2.4rem;
         font-weight: 500;
         border-radius: 1.2rem;
-        box-shadow: 0 2px 6px rgba(8, 11, 18, 8.2) ;
+        box-shadow: 0 2px 6px rgba(8, 11, 18, 0.2);
 
-        div {
+        div{
             display: flex;
             gap: 1.2rem;
             align-items: center;
+
         }
 
         input {
@@ -144,8 +146,8 @@ main {
             cursor: pointer;
         }
 
-        div:has(input:checked) {
-            .custom-checkbox {
+        div:has(input:checked){
+            .custom-checkbox{
                 background: var(--color-brand);
                 border: 1px solid var(--color-brand);
                 transition: background .2s ease;
@@ -163,9 +165,9 @@ main {
             align-items: center;
             cursor: pointer;
 
-            img {
+            img{
                 width: 1.6rem;
-                opacity: .7;
+                opacity: 0.7rem;
             }
         }
     }
@@ -182,7 +184,7 @@ main {
     margin-top: 2.4rem;
 
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
     transition: opacity .4s ease, transform .4s ease;
 
     div {
@@ -215,7 +217,7 @@ main {
         }
     }
 
-    .add-item {
+     .add-item {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 1.6rem;
